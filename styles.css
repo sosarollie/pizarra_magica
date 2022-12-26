@@ -3,7 +3,7 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 20px;
+    align-items: center;
 }
 
 * {
@@ -22,6 +22,47 @@ body{
 .grid {
     display: flex;
     justify-content: center;
+    gap: 60px;
+}
+
+.colors {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.color {
+    padding: 20px;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#indigo {
+    background-color: indigo;
+}
+
+#violet {
+    background-color: violet;
 }
 
 #gridContainer {
@@ -36,11 +77,23 @@ body{
 }
 
 .buttons {
-    margin-bottom: 15px;
+    padding: 30px;
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20%;
+}
+
+input {
+    font-size: 20px;
+    width: 30px;
 }
 
 .pixel{

@@ -12,13 +12,22 @@
         <h1>Pizarra Mágica</h1>
     </div>
     <div class="grid">
+        <div class="colors">
+            <button class="color" id="red" onclick="selectedColor(id)"></button>
+            <button class="color" id="orange" onclick="selectedColor(id)"></button>
+            <button class="color" id="yellow" onclick="selectedColor(id)"></button>
+            <button class="color" id="green" onclick="selectedColor(id)"></button>
+            <button class="color" id="blue" onclick="selectedColor(id)"></button>
+            <button class="color" id="indigo" onclick="selectedColor(id)"></button>
+            <button class="color" id="violet" onclick="selectedColor(id)"></button>
+        </div>
         <div id="gridContainer"></div>
     </div>
     <div class="buttons">
         <button>Limpiar</button>
         <button>Borrar</button>
         <button>Random</button>
-        <input type="text" placeholder="Tamaño de pizarra:" value="16" onchange="changeSize(this.value)">
+        <input type="text" placeholder="Tamaño de pizarra " value="16" onchange="changeSize(this.value)">
     </div>
     <div class="footer">Copyright @sosarollie 2022</div>
     <script src="script.js"></script>

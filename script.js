@@ -1,3 +1,10 @@
+let color = 'black';
+
+function selectedColor(input) {
+    color = input;
+    console.log(input);
+}
+
 function populateGrid(size){
     const gridContainer = document.querySelector("#gridContainer");
     const pixels = document.querySelectorAll('.pixel');
@@ -8,7 +15,6 @@ function populateGrid(size){
     const amount = size * size;
         for (let i = 0; i < amount; i++){
             const div = document.createElement("div");
-            let click = false;
             div.addEventListener('mouseover', painting);
             div.classList.add('pixel');
             gridContainer.insertAdjacentElement('beforeend', div);
@@ -24,5 +30,5 @@ function changeSize(input){
 }
 
 function painting(){
-    this.style.backgroundColor = "black";
+    this.style.backgroundColor = color;
 }
