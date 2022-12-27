@@ -18,7 +18,7 @@ function populateGrid(size){
             div.addEventListener('mouseover', painting);
             div.classList.add('pixel');
             gridContainer.insertAdjacentElement('beforeend', div);
-        }
+        }        
 }
 
 populateGrid(16);
@@ -30,5 +30,15 @@ function changeSize(input){
 }
 
 function painting(){
-    this.style.backgroundColor = color;
-}
+    if (color === 'random') {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else{
+        this.style.backgroundColor = color;
+    };
+};
+
+function clear() {
+    let gridContainer = document.querySelector("#gridContainer");
+    let pixels = gridContainer.querySelectorAll('.pixel');
+    pixels.forEach((div) => div.style.backgroundColor = 'white');
+};   

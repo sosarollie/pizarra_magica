@@ -30,7 +30,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .color {
@@ -63,6 +63,19 @@ body{
 
 #violet {
     background-color: violet;
+}
+
+#black {
+    background-color: black;
+}
+
+#white {
+    background-color: white;
+}
+
+#random {
+    background-image:url('./images/rainbow.jpg');
+    background-size:cover;
 }
 
 #gridContainer {
