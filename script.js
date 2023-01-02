@@ -37,8 +37,8 @@ function painting(){
     };
 };
 
-function clear() {
+function clearBoard() {
     let gridContainer = document.querySelector("#gridContainer");
     let pixels = gridContainer.querySelectorAll('.pixel');
     pixels.forEach((div) => div.style.backgroundColor = 'white');
-};   
+};

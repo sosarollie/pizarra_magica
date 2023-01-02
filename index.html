@@ -21,15 +21,19 @@
             <button class="color" id="indigo" onclick="selectedColor(id)"></button>
             <button class="color" id="violet" onclick="selectedColor(id)"></button>
             <button class="color" id="black" onclick="selectedColor(id)"></button>
-            <button class="color" id="white" onclick="selectedColor(id)"></button>
             <button class="color" id="random" onclick="selectedColor(id)"></button>           
         </div>
         <div id="gridContainer"></div>
     </div>
+    <!-- <div class="sliderContainer">
+        <input id="slider" type="range" min="0" max="1000" value="100" oninput="rangeValue.innerText = this.value">
+        <p id="rangeValue">100</p>
+    </div> -->
     <div class="buttons">
-        <button onclick="clear()">Limpiar</button>
-        <button>Borrar</button>
-        <input type="text" placeholder="Tamaño de pizarra " value="16" onchange="changeSize(this.value)">
+        <button onclick="clearBoard()">Limpiar</button>
+        <button onclick="selectedColor('white')">Borrar</button>
+        <p> Tamaño de pizarra: </p>
+        <input type="text" value="16" onchange="changeSize(this.value)">
     </div>
     <div class="footer">Copyright @sosarollie 2022</div>
     <script src="script.js"></script>
